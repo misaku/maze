@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16b3e791-d4aa-408c-be55-1e962c60a5a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/documentacao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/FazerLabirinto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/aStarAlgorithm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/maze.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/tremauxAlgorithm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maze/walker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ULxx5k81uYkvIu09mQa6alJljq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Users\Michel Kuguio\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.5233.13\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\labirinto\src\img" />
+      <recent name="D:\labirinto\src\maze" />
+      <recent name="D:\labirinto\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\labirinto\src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16b3e791-d4aa-408c-be55-1e962c60a5a3" name="Default Changelist" comment="" />
+      <created>1575149920050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575149920050</updated>
+      <workItem from="1575149922322" duration="11762000" />
+      <workItem from="1575215886388" duration="32226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1496" height="836" key="DiffContextDialog" timestamp="1575257243413">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="92" y="92" width="1496" height="836" key="DiffContextDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1575257243413" />
+    <state x="92" y="92" width="1496" height="836" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575231047533">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="92" y="92" width="1496" height="836" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1575231047533" />
+    <state x="526" y="231" width="627" height="558" key="find.popup" timestamp="1575225192323">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="526" y="231" width="627" height="558" key="find.popup/0.0.1680.1020@0.0.1680.1020" timestamp="1575225192323" />
+    <state x="496" y="163" width="672" height="676" key="search.everywhere.popup" timestamp="1575257694731">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="496" y="163" width="672" height="676" key="search.everywhere.popup/0.0.1680.1020@0.0.1680.1020" timestamp="1575257694731" />
+  </component>
+</project>
