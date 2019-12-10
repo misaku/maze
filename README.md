@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Instalação
+### CLONAR REPOSITORIO
+```JS
+git clone https://github.com/misaku/maze.git
+```
+### INSTALAR E EXECUTAR MODO DEBUG
+* VIA NPM
+```BASH
+npm install
+npm start
+```
+* VIA YARN
+```BASH
+yarn
+yarn start
+```
+### BUILDANDO E RODANDO MODO PRODUÇÃO
+* VIA NPM
+```BASH
+npm build
+npm install -g serve
+npm serve -s build
+```
+* VIA YARN
+```BASH
+yarn build
+yarn global add serve
+yarn serve -s build
+```
+# Aplicação 
+A aplicção foi baseada em codigos de bibliotecas opensource e desenvolvida em React JS,  consiste nas seguintes etapas:
+* __Roseta__ - Cria o Labirinto
+* __Maze__ - Imprime o Labirinto
+* __Walker__ - Classe Responsável para caminhar no labirinto
+* __Star__ - Classe com o algoritimo de busca em estrela
+* __Tremaux__ - Classe com o algoritimo de busca da mão direita
 
-## Available Scripts
+Primeiramente a aplicação chama o Roseta para criar o labirinto,  após isso ela processa com o maze para poder imprimir na tela.
 
-In the project directory, you can run:
+Ao definir o algoritimo de busca que será utilizado é passado juntamente com ele a classe de Walker para que ele possa utilizar para poder caminhar
 
-### `yarn start`
+__Referencia:__ 
+[[primaryobjects](https://en.wikipedia.org/wiki/Maze_solving_algorithm)]
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Algoritmo Roseta
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Gera e mostra um labirinto, usando o algoritmo simples de busca profundidade-primeiro.
 
-### `yarn test`
+Começa em uma célula aleatória.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Marca a célula atual como visitada e obtenha uma lista de seus vizinhos. Para cada vizinho, começando com um vizinho selecionado aleatoriamente.
 
-### `yarn build`
+Se esse vizinho não tiver sido visitado, remova a parede entre essa célula e esse vizinho e recursivo com esse vizinho como a célula atual.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+__Referencia:__ [[Roseta](https://rosettacode.org/wiki/Maze_generation#JavaScript)]
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Algoritmo Tremaux (mão direita)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O algoritmo Tremaux (mão direita) é realmente semelhante a percorrer um labirinto. Somente os blocos imediatos visíveis para você podem ser seguidos.
 
-### `yarn eject`
+Começa em uma direção aleatória e continua até atingir uma parede. Em seguida, vira à direita, até que um caminho esteja disponível para caminhar. Cada vez que o algoritmo dá um passo, marca o bloco como visitado.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+O algoritmo sempre tenta primeiro visitar um bloco não visitado. No entanto, se nenhum bloco novo for encontrado, ele retornará ao bloco visitado.
+                      
+Ele nunca visitará o mesmo bloco mais do que duas vezes (com a única exceção se o algoritmo estiver travado em um beco sem saída, nesse caso, ele voltará a visitar um bloco que já foi recuado, a fim de sair da armadilha).
+                    
+A solução do labirinto são todos os blocos que foram visitados uma vez.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+__Referencia:__ [[Tremaux](https://en.wikipedia.org/wiki/Maze_solving_algorithm#Tr.C3.A9maux.27s_algorithm)]
+                    
+## Algoritmo A* Search
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Uma pesquisa * (estrela) é semelhante a ter uma vista aérea do labirinto antes de atravessá-lo. Ele usa o ponto final do labirinto para calcular uma pontuação de cada bloco vizinho. Inteligentemente percorre vários caminhos, aparentemente ao mesmo tempo, até chegar ao fim.                    
+                      
+Você não seria capaz de usar esse algoritmo se estivesse atravessando fisicamente o labirinto. Pelo menos, não é fácil.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+__Referencia:__ [[A* Search](https://en.wikipedia.org/wiki/A*_search_algorithm)]
